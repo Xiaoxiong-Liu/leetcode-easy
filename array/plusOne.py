@@ -66,27 +66,38 @@ class Solution:
 
 
 #       第二次 2018.08.04
-        # length = len(digits)
-        # for i in range(length-1,-1,-1):
-        #     if digits[i] == 9:
-        #         digits[i] = 0
-        #         if i == 0:
-        #             digits = [1]+digits
-        #     else:
-        #         digits[i] = digits[i]+1
-        #         break
-        # return digits
+#         length = len(digits)
+#         for i in range(length-1,-1,-1):
+#             if digits[i] == 9:
+#                 digits[i] = 0
+#                 if i == 0:
+#                     digits = [1]+digits
+#             else:
+#                 digits[i] = digits[i]+1
+#                 break
+#         return digits
         
-        # 第三次 2018.08.13 注意循环条件 -1 -1
-        
-        for i in range(len(digits) - 1, -1,-1):
-            x = digits[i]+1
-            if x < 10:
-                digits[i] = x
+#         第三次 2018.08.13 注意循环条件 -1 -1
+#         for i in range(len(digits) - 1, -1,-1):
+#             x = digits[i]+1
+#             if x < 10:
+#                 digits[i] = x
+#                 break
+#             if x == 10:
+#                 digits[i] = 0
+#                 if i == 0:
+#                     digits = [1]+digits
+#         return digits
+
+#       2018.08.26 思路基本一致，这一版更直观。    
+        digits[len(digits)-1] = digits[len(digits)-1]+1
+        for i in range(len(digits)-1,-1,-1):
+            if digits[i]<10:
                 break
-            if x == 10:
-                digits[i] = 0
-                if i == 0:
-                    digits = [1]+digits
+            digits[i] = 0
+            if i == 0:
+                digits = [1]+digits
+            else:
+                digits[i-1] = digits[i-1]+1
         return digits
         
