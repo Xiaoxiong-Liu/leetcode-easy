@@ -40,6 +40,8 @@ class Solution:
         
         """
         
+        # 2018.08.26 复习了一遍，很容易想到。
+        
         node.val = node.next.val
         node.next = node.next.next
         
