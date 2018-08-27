@@ -45,3 +45,5 @@ class Solution:
         head = head.next
 
         return head
+        
+    # 2018.08.27 review
