@@ -20,14 +20,27 @@ class Solution:
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         #查到非0的个数
-        count = 0
-        for num in nums:
-            if num != 0:
-                count += 1
-        j = 0
+#         count = 0
+#         for num in nums:
+#             if num != 0:
+#                 count += 1
+#         j = 0
+#         for i in range(len(nums)):
+#             if nums[i] != 0:
+#                 nums[j] = nums[i]
+#                 j += 1
+#         for x in range(count,len(nums)):
+#             nums[x] = 0
+
+#       改用更优雅的方法，只需要遍历一次
+        j=0 
         for i in range(len(nums)):
             if nums[i] != 0:
                 nums[j] = nums[i]
+                if i != j:
+                    nums[i] = 0 
                 j += 1
-        for x in range(count,len(nums)):
-            nums[x] = 0
+        return nums
+
+            
+        
