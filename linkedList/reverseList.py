@@ -40,3 +40,17 @@ class Solution:
                         
             head.next = None                        #之前一直忽略的问题
             return h
+        
+        
+    # 迭代解法 2018.08.27
+    def reverseList2(self, head):
+        if head == None or head.next == None:
+            return head
+        p = None
+        q = head
+        while q!=None:
+            t = q.next
+            q.next = p
+            p = q
+            q = t
+        return p
