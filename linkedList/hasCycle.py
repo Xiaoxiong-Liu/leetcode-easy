@@ -33,3 +33,4 @@ class Solution():
                 return True
             
         return False
+# review 2018.08.28   if条件注意。
