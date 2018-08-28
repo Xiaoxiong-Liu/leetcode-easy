@@ -45,3 +45,4 @@ class Solution:
             for x in range(j+1):
                 nums1[x] = nums2[x]
         
+        # 重点是逆序填充 review 2018.08.28
