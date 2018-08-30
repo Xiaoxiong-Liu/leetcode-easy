@@ -68,3 +68,5 @@ class Solution:
         tmp = matrix[i][j]
         matrix[i][j] = matrix[j][i]
         matrix[j][i] = tmp
+        
+# 2018.08.30 review
