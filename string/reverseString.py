@@ -25,3 +25,5 @@ class Solution:
         for i in range(len(s)-1,-1,-1):
             re = re + s[i]
         return re
+
+    #2018.08.31 review
