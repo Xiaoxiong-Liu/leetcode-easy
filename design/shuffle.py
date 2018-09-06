@@ -29,7 +29,7 @@ class Solution:
         """
         :type nums: List[int]
         """
-        self.backup = nums[::]
+        self.backup = nums[::]                  
         self.array = nums
 
     def reset(self):
@@ -37,7 +37,7 @@ class Solution:
         Resets the array to its original configuration and return it.
         :rtype: List[int]
         """
-        self.array = self.backup[::]
+        self.array = self.backup[::]           
         return self.backup
         
 
