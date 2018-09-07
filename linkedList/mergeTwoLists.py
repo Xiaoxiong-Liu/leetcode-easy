@@ -25,7 +25,7 @@ class Solution:
         :type l2: ListNode
         :rtype: ListNode
         """
-        end = ListNode(-1)                 # TODO 带头节点，等下删除
+        end = ListNode(-1)                 # 带头节点，等下删除，因为是新的链表，什么都没有就不知道该从哪开始了
         head = end
         
         while l1 != None and l2 != None:
