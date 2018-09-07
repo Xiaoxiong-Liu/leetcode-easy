@@ -78,3 +78,5 @@ class Solution:
         elif int(newS) < -2**31 :
             newS = "-2147483648"
         return int(newS)
+
+# 2018.09.07 review 最近开学事情比较多。
