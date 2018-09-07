@@ -36,9 +36,12 @@ class Solution:
         j = 0 #指针
         for i in range(len(haystack)-len(needle)+1):
             for j in range(len(needle)):
-                if needle[j] != haystack[i+j]:
+                if needle[j] != haystack[i+j]:          # break条件
                     break    
-                if j == len(needle)-1:
+                if j == len(needle)-1:                  # needle到了最后
                     return i
         
         return -1
+    
+    
+    # 2018.09.07 review
