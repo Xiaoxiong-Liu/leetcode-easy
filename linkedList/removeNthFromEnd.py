@@ -53,3 +53,5 @@ class Solution:
         now.next = now.next.next
         return head
         
+        # 2018.09.10 review
+        # 双指针的思想。
