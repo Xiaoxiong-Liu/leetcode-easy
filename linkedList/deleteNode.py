@@ -45,3 +45,5 @@ class Solution:
         node.val = node.next.val
         node.next = node.next.next
         
+        # 2018.09.10 review
+        
