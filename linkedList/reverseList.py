@@ -38,7 +38,7 @@ class Solution:
             # ht.next = head                          # h的尾巴
             head.next.next = head                     #这个写得就很好 上面获取的ht其实就是head.next    
                         
-            head.next = None                        #之前一直忽略的问题
+            head.next = None                        #之前一直忽略的问题！！！！
             return h
         
         
@@ -54,3 +54,5 @@ class Solution:
             p = q
             q = t
         return p
+    
+    # 2018.09.11 重写 迭代解
