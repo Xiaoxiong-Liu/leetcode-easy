@@ -38,7 +38,7 @@ class Solution:
             r = t
         
         if length%2 == 1:
-            r = r.next
+            r = r.next                  # 单数情况中间的一个单独
         
         for i in range(length//2):
             if pre.val != r.val:
@@ -47,4 +47,5 @@ class Solution:
             r = r.next
         return True
 
-        
+# 2018.09.11 review
+
