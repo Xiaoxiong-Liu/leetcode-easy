@@ -23,7 +23,7 @@ class Solution():
         :rtype: bool
         """
         fast = head
-        if fast == None or fast.next == None or fast.next.next == None:
+        if fast == None or fast.next == None or fast.next.next == None:             #有环的话就一定能追上，没有的话则则一定能到END
             return False
         while fast != None and fast.next != None:
             fast = fast.next
