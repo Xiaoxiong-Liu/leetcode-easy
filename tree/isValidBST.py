@@ -67,3 +67,10 @@ class Solution:
     
     
     """
+    
+    # 2018.09.16 review
+    def isBST2(self,root,left,right):
+        if root == None:                    #这里我开始用的是left和right的判断，情况比较多。
+            return True        
+        return root.val<right and self.isBST(root.right,root.val,right) and left<root.val and self.isBST(root.left,left,root.val)
+
