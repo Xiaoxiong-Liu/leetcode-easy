@@ -70,3 +70,6 @@ class Solution:
             return False
         
         return self.issym(l.left,r.right) and self.issym(l.right,r.left)
+    
+    # 2018.09.16 review
+    
