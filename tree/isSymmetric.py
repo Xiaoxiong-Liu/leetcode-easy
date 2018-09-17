@@ -73,3 +73,16 @@ class Solution:
     
     # 2018.09.16 review
     
+    # 2018.09.17 review
+    def isSymmetric2(self, root):
+        if root == None:
+            return True
+        return self.isSym2(root.left,root.right)
+        
+    def isSym2(self, left,right):
+        if left ==None and right == None:
+            return True
+        if left==None or right ==None:
+            return False
+        return left.val == right.val and self.isSym2(left.left,right.right) and self.isSym2(left.right,right.left)
+    
