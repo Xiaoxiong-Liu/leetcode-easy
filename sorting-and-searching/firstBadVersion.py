@@ -67,3 +67,5 @@ class Solution:
         if isBadVersion(begin) == True:
             return begin
         return end
+    
+# 2018.09.20 review，下次应该自己试着手写。
