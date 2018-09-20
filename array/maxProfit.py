@@ -25,7 +25,7 @@
 输出: 0
 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
 
-https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/others/22/
+https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/22/
 ”“”
 
 
