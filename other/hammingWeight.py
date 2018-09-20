@@ -37,3 +37,5 @@ class Solution(object):
             ans = ans//2
         return count
         
+# 2018.09.20
+# 可以利用 n和n-1想与可以消去最右边的1，循环看能与多少次。
