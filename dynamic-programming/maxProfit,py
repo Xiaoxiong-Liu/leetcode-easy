@@ -37,3 +37,5 @@ class Solution:
             if price < bottom:
                 bottom = price
         return profit
+        
+# 2018.09.25 review
