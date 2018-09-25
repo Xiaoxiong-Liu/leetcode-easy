@@ -101,3 +101,4 @@ class Solution:
                 digits[i-1] = digits[i-1]+1
         return digits
         
+# 2018.09.25 重写的版本和上面基本一样
