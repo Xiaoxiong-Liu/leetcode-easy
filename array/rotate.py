@@ -37,3 +37,6 @@ class Solution:
             tmp = nums[begin+i]
             nums[i+begin] = nums[end - i - 1]
             nums[end - i - 1] = tmp
+            
+# 2018.09.25 review
+
