@@ -41,6 +41,8 @@ class Solution:
                     nums[i] = 0 
                 j += 1
         return nums
+    
+# 2018.09.26 i和j是否相等这个判断很优雅。
 
             
         
