@@ -24,7 +24,7 @@ class Solution:
 #   【2018.08.07】注意边界，左移先对
     def rotate(self, nums,k):
         k = k%len(nums)
-        
+        # 先整体翻转，也可以先翻转部分，不过len-k
         self.reverse(nums,0,len(nums))  
         self.reverse(nums,0,k)
         self.reverse(nums,k,len(nums))
@@ -39,4 +39,5 @@ class Solution:
             nums[end - i - 1] = tmp
             
 # 2018.09.25 review
+# 2019.06.21 review
 
